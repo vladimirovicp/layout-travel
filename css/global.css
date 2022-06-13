@@ -1,0 +1,79 @@
+html {
+    scroll-behavior: smooth;
+}
+
+a{
+    transition: color .5s;
+}
+a:hover{
+    color: rgba(242, 120, 92, 0.70);
+}
+
+.title{
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 1.325;
+    color: #F2785C;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button{
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 500;
+    line-height: 1.333;
+    background-color: #0D606F;
+    box-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.25), 0 .2rem .3rem rgba(13, 96, 111, 0.16);
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 2.4rem;
+    padding: 1.35rem 3.25rem;
+    transition: color .5s;
+}
+
+.button:hover{
+    /*color: rgba(242, 120, 92, 0.70);*/
+    color: #F2785C;
+}
+
+.button-arrow{
+    position: relative;
+    padding-left: 8.1rem;
+    line-height: 155%;
+}
+
+.button-arrow::before{
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    background-image: url("../img/svg/arrow-button.svg");
+    background-repeat: no-repeat;
+    left: 3rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-size: 4rem 4rem;
+    transition: .5s;
+
+}
+
+.button-arrow:hover::before{
+    filter: brightness(0) saturate(100%) invert(63%) sepia(78%) saturate(2087%) hue-rotate(322deg) brightness(99%) contrast(92%);
+}
+
+.center-button{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+
+@media (min-width: 1440px ){
+    html {
+        font-size: 10px;
+    }
+}
+
+
+
