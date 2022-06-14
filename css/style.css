@@ -495,6 +495,42 @@
         display: flex;
         align-items: center;
     }
+    .preview__description{
+        width: 100%;
+    }
+
+    .stories__img{
+        width: 31rem;
+        height: 26rem;
+    }
+
+    .stories__img img{
+        object-fit:cover;
+    }
+    .store__info{
+        width: 39rem;
+    }
+
+    .store__info-header{
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+
+    .store__info-text {
+        font-size: 1.8rem;
+        /*margin-bottom: 2rem;*/
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .store__info-link{
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 120%;
+        text-decoration-line: underline;
+    }
 
 }
 
