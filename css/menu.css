@@ -2,9 +2,12 @@
     display: none;
 }
 
+.menu__close{
+    display: none;
+}
+
 
 @media (max-width: 48em) {
-
     .menu__icon{
         z-index: 5;
         display: block;
@@ -24,7 +27,6 @@
         transition: all 0.3s ease 0s;
         background-color: #fff;
     }
-
     .menu__icon::before,
     .menu__icon::after{
         content: '';
@@ -55,6 +57,30 @@
         bottom:50%;
         transform: rotate(45deg) translate(0, 50%);
     }
+
+    .header__nav{
+        position: fixed;
+        top:0;
+        right: 0;
+        width: 33rem;
+        height: 50.2rem;
+        background-color: rgba(242, 120, 92, 1);
+        padding: 8.8rem 3rem 1rem 1rem;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+        z-index: 10;
+    }
+
+    .menu__close{
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 3.09rem;
+        top: 3.09rem;
+    }
+
+
 
 
 }
