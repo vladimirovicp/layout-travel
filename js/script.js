@@ -18,3 +18,20 @@ const swiper = new Swiper('.destinations__swiper', {
    // Свободнфй режим
    //  freeMode: true,
 });
+
+
+const menu = document.querySelector('.menu__icon');
+const menuClose = document.querySelector('.menu__close');
+const menuContent = document.querySelector('#main-menu');
+
+if(menu){
+    menu.addEventListener("click", function (e){
+        menuContent.classList.add('_active')
+    })
+}
+
+if(menuClose){
+    menuClose.addEventListener("click", function (e){
+        menuContent.classList.remove('_active')
+    })
+}

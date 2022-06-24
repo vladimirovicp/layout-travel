@@ -12,8 +12,10 @@
         z-index: 5;
         display: block;
         position: relative;
-        width: 30px;
-        height: 18px;
+        /*width: 30px;*/
+        /*height: 18px;*/
+        width: 5.25rem;
+        height: 3.2rem;
         cursor: pointer;
     }
 
@@ -22,7 +24,7 @@
     .menu__icon::after{
         left: 0;
         position: absolute;
-        height: 10%;
+        height: 15%;
         width: 100%;
         transition: all 0.3s ease 0s;
         background-color: #fff;
@@ -61,7 +63,8 @@
     .header__nav{
         position: fixed;
         top:0;
-        right: 0;
+        /*right: 0;*/
+        right: -100%;
         width: 33rem;
         height: 50.2rem;
         background-color: rgba(242, 120, 92, 1);
@@ -69,6 +72,10 @@
         transition: all 0.3s ease 0s;
         overflow: auto;
         z-index: 10;
+    }
+
+    .header__nav._active{
+        right: 0;
     }
 
     .menu__close{
