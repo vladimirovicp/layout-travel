@@ -1,6 +1,6 @@
 const swiper = new Swiper('.destinations__swiper', {
     loop: true,
-    slidesPerView: 1.8,
+    slidesPerView: 1,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -12,6 +12,9 @@ const swiper = new Swiper('.destinations__swiper', {
     breakpoints: {
         '480': {
             slidesPerView: 1,
+        },
+        '1200': {
+            slidesPerView: 1.8,
         },
     }
 
