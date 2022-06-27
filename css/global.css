@@ -82,11 +82,18 @@ a:hover{
         border-radius: 2rem;
     }
     .button-arrow{
-        padding-left: 8.1rem;
+        padding-left: 5rem;
+    }
+
+    .button-arrow::before{
+        height: 2rem;
+        width: 2rem;
+        left: 2.7rem;
+        background-size: 2rem 2rem;
     }
 
     .center-button{
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .title{

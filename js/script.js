@@ -10,7 +10,14 @@ const swiper = new Swiper('.destinations__swiper', {
     watchSlidesVisibility: true,
 
     breakpoints: {
-        '480': {
+        '320': {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        },
+        '1119': {
             slidesPerView: 1,
         },
         '1200': {
