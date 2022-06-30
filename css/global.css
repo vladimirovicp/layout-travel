@@ -75,5 +75,31 @@ a:hover{
     }
 }
 
+@media (max-width: 48em) {
+    .button{
+        font-size: 2.2rem;
+        padding: 1.5rem 1.5rem;
+        border-radius: 2rem;
+    }
+    .button-arrow{
+        padding-left: 5rem;
+    }
+
+    .button-arrow::before{
+        height: 2rem;
+        width: 2rem;
+        left: 2.7rem;
+        background-size: 2rem 2rem;
+    }
+
+    .center-button{
+        margin-top: 1rem;
+    }
+
+    .title{
+        font-size: 2.8rem;
+    }
+}
+
 
 
