@@ -21,7 +21,7 @@ const swiper = new Swiper('.destinations__swiper', {
             slidesPerView: 1,
         },
         '1200': {
-            slidesPerView: 1.8,
+            slidesPerView: 1.68,
         },
     }
 
