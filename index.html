@@ -4,227 +4,267 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico"/>
 
     <title>Travel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra&family=Red+Hat+Text:wght@500&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="./css/swiper-bundle.css">
     <link rel="stylesheet" href="./css/default-style.css">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
 
     <script defer src="./js/swiper-bundle.js"></script>
     <script defer src="./js/script.js"></script>
 </head>
 <body>
-
-    <header class="header">
-        <div class="header__wrapper">
-            <div class="container">
-                <a href="#" class="header__logo logo">
-                    <div class="header__logo-img">
-                            <img src="./img/svg/logo.svg" alt="logo Travel">
-                    </div>
-                    <div class="header__logo-text">
-                        Travel Portal
-                    </div>
-
-                </a>
+<header class="header">
+    <div class="header__wrapper">
+        <div class="container">
+            <a href="#" class="header__logo logo">
+                <div class="header__logo-img">
+                    <img src="./img/svg/logo.svg" alt="logo Travel">
+                </div>
+                <div class="header__logo-text">
+                    Travel Portal
+                </div>
+            </a>
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
 
                 <nav id="main-menu" class="nav header__nav">
+                    <button class="menu__close">
+                        <img src="./img/svg/nav-close.svg" alt="close">
+                    </button>
                     <ul class="header__nav-list nav-list">
                         <li class="header__nav-item"><a href="#preview" class="header__nav-link">How It Works</a></li>
                         <li class="header__nav-item"><a href="#steps" class="header__nav-link">Plan Your Trip</a></li>
-                        <li class="header__nav-item"><a href="#destinations" class="header__nav-link">Destinations</a></li>
+                        <li class="header__nav-item"><a href="#destinations" class="header__nav-link">Destinations</a>
+                        </li>
                         <li class="header__nav-item"><a href="#stories" class="header__nav-link">Travel Stories</a></li>
                     </ul>
                 </nav>
-                <button type="button" class="header__button button">Login</button>
+            </div>
+
+            <button type="button" class="header__button button">Login</button>
+
+        </div>
+    </div>
+</header>
+<main>
+    <section id="preview" class="preview">
+        <div class="preview__wrapper">
+            <div class="container">
+                <div class="preview__description">
+                    <h1 class="preview__title">Explore the beauty of the World</h1>
+                    <p class="preview__text">Recieve personalized recommendations for countries, hotels, activities and
+                        more</p>
+                    <form class="preview__search search">
+                        <input id="search-input" class="preview__search-input" type="search"
+                               placeholder="What would you like to do?"/>
+                        <button class="button preview__button">Start Planning</button>
+                    </form>
+                </div>
 
             </div>
         </div>
-    </header>
-    <main>
-        <section id="preview" class="preview">
-            <div class="preview__wrapper">
-                <div class="container">
-                    <div class="preview__description">
-                        <h1 class="preview__title">Explore the beauty of the World</h1>
-                        <p class="preview__text">Recieve personalized recommendations for countries, hotels, activities and more</p>
-                        <form class="preview__search search">
-                            <input id="search-input" class="preview__search-input" type="search" placeholder="What would you like to do?" />
-                            <button class="button preview__button">Start Planning</button>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section id="steps" class="steps">
-            <div class="container">
-                <h2 class="steps__header title">3 STEPS TO THE PERFECT TRIP</h2>
-                <div class="steps__wrapper">
-                    <div class="steps__item">
-                        <div class="step__img">
-                            <div class="step__square">
-                                <img src="./img/svg/steps/bike.svg" alt="bike">
-                            </div>
-                        </div>
-                        <div class="step__text">Tell us what you want to do</div>
-                    </div>
-                    <div class="steps__item">
-                        <div class="step__img">
-                            <div class="step__square">
-
-                                <img src="./img/svg/steps/calendar.svg" alt="calendar">
-                            </div>
-                        </div>
-                        <div class="step__text">Share us preferable dates </div>
-                    </div>
-                    <div class="steps__item">
-                        <div class="step__img">
-                            <div class="step__square">
-                                <img src="./img/svg/steps/airplane.svg" alt="airplane">
-                            </div>
-                        </div>
-                        <div class="step__text">We will give you recommendations</div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section id="destinations" class="destinations">
-            <h2 class="destinations__header title">POPULAR DESTINATIONS</h2>
-                <div class="destinations__swiper swiper">
-                    <div class="swiper-wrapper">
-                        <div class="destinations__slide swiper-slide">
-                            <div class="destinations__slide-content">
-                                <div class="destinations__slide-img">
-                                    <img src="./img/jpg/destinations/japan.jpg" alt="Japan">
-                                </div>
-                                <div class="destinations__slide-text">Japan</div>
-                            </div>
-                        </div>
-                        <div class="destinations__slide swiper-slide">
-                            <div class="destinations__slide-content">
-                                <div class="destinations__slide-img">
-                                    <img src="./img/jpg/destinations/usa.jpg" alt="Usa">
-                                </div>
-                                <div class="destinations__slide-text">Usa</div>
-                            </div>
-                        </div>
-                        <div class="destinations__slide swiper-slide">
-                            <div class="destinations__slide-content">
-                                <div class="destinations__slide-img">
-                                    <img src="./img/jpg/destinations/spain.jpg" alt="Spain">
-                                </div>
-
-                                <div class="destinations__slide-text">Spain</div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="destinations__pagination swiper-pagination"></div>
-                </div>
-            <div class="center-button">
-                <button class="button button-arrow destinations__button">Find More</button>
-            </div>
-
-
-        </section>
-        <section id="stories" class="stories">
-            <h2 class="stories__header title">TRAVEL STORIES</h2>
-
-            <div class="stories__wrapper">
-                <div class="stories__container container">
-                    <div class="stories__item">
-                        <div class="stories__img">
-                            <img src="./img/jpg/stories/1.jpg" alt="Photos of Attractive Thailand">
-                        </div>
-                        <div class="store__info">
-                            <h3 class="store__info-header">10 Photos of Attractive Thailand</h3>
-                            <p class="store__info-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... Read More
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="stories__item">
-                        <div class="stories__img">
-                            <img src="./img/jpg/stories/2.jpg" alt="Canyonlands National Park, Utah">
-                        </div>
-                        <div class="store__info">
-                            <h3 class="store__info-header">Canyonlands National Park, Utah</h3>
-                            <p class="store__info-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... Read More
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="stories__item">
-                        <div class="stories__img">
-                            <img src="./img/jpg/stories/3.jpg" alt="I left my heart in the Mountains!">
-                        </div>
-                        <div class="store__info">
-                            <h3 class="store__info-header">I left my heart in the Mountains!</h3>
-                            <p class="store__info-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... Read More
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="stories__item">
-                        <div class="stories__img">
-                            <img src="./img/jpg/stories/4.jpg" alt="The Longest journey in my life!">
-                        </div>
-                        <div class="store__info">
-                            <h3 class="store__info-header">The Longest journey in my life!</h3>
-                            <p class="store__info-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... Read More
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="center-button">
-                        <button class="button button-arrow destinations__button">See More</button>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-    </main>
-    <footer class="footer">
+    </section>
+    <section id="steps" class="steps">
         <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__copy"><a href="https://rs.school/js-stage0/" target="_blank">All Rights Reserved © Travel Portal</a></div>
-                <div class="footer__social-networks">
-                    <a href="#" class="footer__social-link">
-                        <svg class="soc-icon">
-                            <use xlink:href="./img/svg/social-networks/sprite-socialNetworks.svg#instagram"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="footer__social-link">
+            <h2 class="steps__header title">3 STEPS TO THE PERFECT TRIP</h2>
+            <div class="steps__wrapper">
+                <div class="steps__item">
+                    <div class="step__img">
+                        <div class="step__square">
+                            <img src="./img/svg/steps/bike.svg" alt="bike">
+                        </div>
+                    </div>
+                    <div class="step__text">Tell us what you want to do</div>
+                </div>
+                <div class="steps__item">
+                    <div class="step__img">
+                        <div class="step__square">
+
+                            <img src="./img/svg/steps/calendar.svg" alt="calendar">
+                        </div>
+                    </div>
+                    <div class="step__text">Share us preferable dates</div>
+                </div>
+                <div class="steps__item">
+                    <div class="step__img">
+                        <div class="step__square">
+                            <img src="./img/svg/steps/airplane.svg" alt="airplane">
+                        </div>
+                    </div>
+                    <div class="step__text">We will give you recommendations</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="destinations" class="destinations">
+        <h2 class="destinations__header title">POPULAR DESTINATIONS</h2>
+        <div class="destinations__swiper swiper">
+            <div class="swiper-wrapper">
+                <div class="destinations__slide swiper-slide">
+                    <div class="destinations__slide-content">
+                        <div class="destinations__slide-img">
+                            <img src="./img/jpg/destinations/japan.jpg" alt="Japan">
+                        </div>
+                        <div class="destinations__slide-text">Japan</div>
+                    </div>
+                </div>
+                <div class="destinations__slide swiper-slide">
+                    <div class="destinations__slide-content">
+                        <div class="destinations__slide-img">
+                            <img src="./img/jpg/destinations/usa.jpg" alt="Usa">
+                        </div>
+                        <div class="destinations__slide-text">Usa</div>
+                    </div>
+                </div>
+                <div class="destinations__slide swiper-slide">
+                    <div class="destinations__slide-content">
+                        <div class="destinations__slide-img">
+                            <img src="./img/jpg/destinations/spain.jpg" alt="Spain">
+                        </div>
+
+                        <div class="destinations__slide-text">Spain</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="destinations__pagination swiper-pagination"></div>
+            <div class="swiper-button-prev destinations__button-prev"></div>
+            <div class="swiper-button-next destinations__button-next"></div>
+        </div>
+        <div class="center-button">
+            <button class="button button-arrow destinations__button">Find More</button>
+        </div>
+
+
+    </section>
+    <section id="stories" class="stories">
+        <h2 class="stories__header title">TRAVEL STORIES</h2>
+
+        <div class="stories__wrapper">
+            <div class="stories__container container">
+                <div class="stories__item">
+                    <div class="stories__img">
+                        <img src="./img/jpg/stories/1.jpg" alt="Photos of Attractive Thailand">
+                    </div>
+                    <div class="store__info">
+                        <h3 class="store__info-header">10 Photos of Attractive Thailand</h3>
+                        <p class="store__info-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla<span> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>.Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit...
+                        </p>
+                        <a href="#" class="store__info-link">Read More</a>
+                    </div>
+                </div>
+
+                <div class="stories__item">
+                    <div class="stories__img">
+                        <img src="./img/jpg/stories/2.jpg" alt="Canyonlands National Park, Utah">
+                    </div>
+                    <div class="store__info">
+                        <h3 class="store__info-header">Canyonlands National Park, Utah</h3>
+                        <p class="store__info-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla<span> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>.Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit...
+                        </p>
+                        <a href="#" class="store__info-link">Read More</a>
+                    </div>
+                </div>
+
+                <div class="stories__item">
+                    <div class="stories__img">
+                        <img src="./img/jpg/stories/3.jpg" alt="I left my heart in the Mountains!">
+                    </div>
+                    <div class="store__info">
+                        <h3 class="store__info-header">I left my heart in the Mountains!</h3>
+                        <p class="store__info-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla<span> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>.Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit...
+                        </p>
+                        <a href="#" class="store__info-link">Read More</a>
+                    </div>
+                </div>
+
+                <div class="stories__item">
+                    <div class="stories__img">
+                        <img src="./img/jpg/stories/4.jpg" alt="The Longest journey in my life!">
+                    </div>
+                    <div class="store__info">
+                        <h3 class="store__info-header">The Longest journey in my life!</h3>
+                        <p class="store__info-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla<span> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>.Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit...
+                        </p>
+                        <a href="#" class="store__info-link">Read More</a>
+                    </div>
+                </div>
+
+                <div class="center-button">
+                    <button class="button button-arrow destinations__button">See More</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__copy"><a href="https://rs.school/js-stage0/" target="_blank">All Rights Reserved ©
+                Travel Portal</a></div>
+            <ul class="footer__social-networks">
+                <li class="footer__social-item">
+                    <a href="https://github.com/vladimirovicp" class="footer__social-link">
+                    <svg class="soc-icon">
+                        <use xlink:href="./img/svg/social-networks/sprite-socialNetworks.svg#instagram"></use>
+                    </svg>
+                </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://github.com/vladimirovicp" class="footer__social-link">
                         <svg class="soc-icon soc-youtube">
                             <use xlink:href="./img/svg/social-networks/sprite-socialNetworks.svg#youtube"></use>
                         </svg>
                     </a>
-                    <a href="#" class="footer__social-link">
-                        <svg class="soc-icon">
-                            <use xlink:href="./img/svg/social-networks/sprite-socialNetworks.svg#twitter"></use>
-                        </svg>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://github.com/vladimirovicp" class="footer__social-link">
+                    <svg class="soc-icon">
+                        <use xlink:href="./img/svg/social-networks/sprite-socialNetworks.svg#twitter"></use>
+                    </svg>
                     </a>
-                </div>
-            </div>
-
-
-
+                </li>
+            </ul>
         </div>
 
 
-    </footer>
+    </div>
+
+
+</footer>
 
 </body>
 </html>

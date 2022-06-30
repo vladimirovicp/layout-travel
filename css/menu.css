@@ -1,0 +1,93 @@
+.menu__icon{
+    display: none;
+}
+
+.menu__close{
+    display: none;
+}
+
+
+@media (max-width: 48em) {
+    .menu__icon{
+        z-index: 5;
+        display: block;
+        position: relative;
+        /*width: 30px;*/
+        /*height: 18px;*/
+        width: 5.25rem;
+        height: 3.2rem;
+        cursor: pointer;
+    }
+
+    .menu__icon span,
+    .menu__icon::before,
+    .menu__icon::after{
+        left: 0;
+        position: absolute;
+        height: 15%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #fff;
+    }
+    .menu__icon::before,
+    .menu__icon::after{
+        content: '';
+    }
+
+    .menu__icon::before{
+        top: 0;
+    }
+    .menu__icon::after{
+        bottom: 0;
+    }
+
+    .menu__icon span{
+        top: 50%;
+        transform: scale(1) translate(0, -50%);
+    }
+
+    .menu__icon._active span{
+        transform: scale(0) translate(0, -50%);
+    }
+
+    .menu__icon._active::before{
+        top:50%;
+        transform: rotate(-45deg) translate(0, -50%);
+    }
+
+    .menu__icon._active::after{
+        bottom:50%;
+        transform: rotate(45deg) translate(0, 50%);
+    }
+
+    .header__nav{
+        position: fixed;
+        top:0;
+        /*right: 0;*/
+        right: -100%;
+        width: 33rem;
+        height: 50.2rem;
+        background-color: rgba(242, 120, 92, 1);
+        padding: 8.8rem 3rem 1rem 1rem;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+        z-index: 10;
+    }
+
+    .header__nav._active{
+        right: 0;
+    }
+
+    .menu__close{
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 3.09rem;
+        top: 3.09rem;
+    }
+
+
+
+
+}
