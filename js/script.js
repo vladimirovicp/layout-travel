@@ -17,10 +17,12 @@ const swiper = new Swiper('.destinations__swiper', {
                 prevEl: '.swiper-button-prev',
             },
         },
-        '1119': {
-            slidesPerView: 1,
+
+        '768': {
+            slidesPerView: 1.68,
         },
-        '1200': {
+
+        '1440': {
             slidesPerView: 1.68,
         },
     }

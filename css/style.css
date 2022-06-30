@@ -210,8 +210,8 @@
 }
 
 .destinations__slide{
-    /*padding: 0 3rem;*/
-    margin: 0 3rem;
+    padding: 0 3rem;
+    /*margin: 0 3rem;*/
 }
 
 .destinations__slide-content{
@@ -431,9 +431,17 @@
         display: none;
     }
 
+
+}
+
+@media (min-width: 1440px) {
     .destinations__slide, .destinations__slide-content img{
         width: 800px;
         height: 800px;
+    }
+
+    .destinations__slide{
+        margin: 0 3rem;
     }
 }
 
