@@ -563,8 +563,11 @@
     }
 
     .stories__img{
-        width: 31rem;
-        height: 26rem;
+        /*width: 31rem;*/
+        /*height: 26rem;*/
+
+        width: 43%;
+        height: auto;
     }
 
     .stories__item{
@@ -575,7 +578,8 @@
         object-fit:cover;
     }
     .store__info{
-        width: 39rem;
+        /*width: 39rem;*/
+        width: 54%;
     }
 
     .store__info-header{
