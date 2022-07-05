@@ -13,7 +13,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
 }
 
 .logo{
@@ -431,6 +430,10 @@
         display: none;
     }
 
+    .mobile{
+        display: none;
+    }
+
 
 }
 
@@ -456,8 +459,7 @@
     .header {
         width: 100%;
         border-radius: 5rem 5rem 0 0;
-        /*padding-top: 8.6rem;*/
-        padding-top: 8.2rem;
+        padding-top: 8.6rem;
         background-size: 160%;
         background-position: center -2rem;
     }
@@ -491,7 +493,7 @@
         height: 6rem;
     }
     .preview__search{
-        width: 69rem;
+        width: 72rem;
         height: 9.6rem;
         border-radius: 3.2rem;
         padding-left: 3.6rem
@@ -517,7 +519,7 @@
     }
 
     .preview{
-        height: 33rem;
+        height: 35.2rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -536,12 +538,14 @@
 
     .steps{
         padding-top: 4rem;
-        padding-bottom: 3.4rem;
+        padding-bottom: 3.7rem;
     }
 
     .steps__header{
         font-size: 2.7rem;
+        margin-bottom: 4.5rem;
     }
+
 
     .step__square{
         width: 14rem;
@@ -550,33 +554,37 @@
     }
 
     .step__img{
-        margin-bottom: 3rem;
+        margin-bottom: 3.8rem;
     }
 
     .stories__header{
-        margin-bottom: 0;
+        margin-bottom: 2rem;
     }
 
     .stories__img{
-        width: 28.6rem;
-        height: 24rem;
+        /*width: 31rem;*/
+        /*height: 26rem;*/
+
+        width: 43%;
+        height: auto;
     }
 
     .stories__item{
-        margin-bottom: 2.4rem;
+        /*margin-bottom: 2.4rem;*/
     }
 
     .stories__img img{
         object-fit:cover;
     }
     .store__info{
-        width: 36.5rem;
+        /*width: 39rem;*/
+        width: 54%;
     }
 
     .store__info-header{
         font-size: 2.2rem;
         font-weight: bold;
-        margin-bottom: 1.2rem;
+        margin-bottom: 2.2rem;
     }
 
     .store__info-text {
@@ -624,8 +632,8 @@
 
     .swiper,
     .destinations__slide-img img{
-        width: 69rem;
-        height: 40rem;
+        width: 72rem;
+        height: 42rem;
         object-fit: cover;
     }
 
@@ -634,18 +642,24 @@
     }
 
     .destinations__slide-text{
+        font-size: 4rem;
         text-transform: uppercase;
         bottom: 0;
         top: 1.6rem;
         left: 3rem;
     }
 
-    .destinations__header{
-        margin-bottom: 3.6rem;
-    }
+    /*.destinations__header{*/
+    /*    margin-bottom: 3.6rem;*/
+    /*}*/
 
     .destinations{
         padding-bottom: 0;
+    }
+
+    .destinations__swiper .swiper-pagination-bullet{
+        width: 1.6rem;
+        height: 1.6rem;
     }
 
 
@@ -661,14 +675,18 @@
     .stories__wrapper{
         background-image: url(../img/jpg/footer-mob.jpg);
         background-position: center bottom -13rem;
-        /*background-size: contain;*/
-        padding-bottom: 2.6rem;
+        background-size: cover;
+        padding-bottom: 1.8rem;
+        padding-top: 1.5rem;
+        background-size: 100% 140rem;
     }
 
     .footer{
         height: 13rem;
         border-radius: 0 0 5rem 5rem;
         background-image: url(../img/jpg/footer-mob.jpg);
+        background-size: cover;
+        background-size: 100% 140rem;
     }
 
     .footer .container{
@@ -692,6 +710,10 @@
         display: none;
     }
 
+    .footer__social-networks .footer__social-item:not(:last-child){
+        margin-right: 4.2rem
+    }
+
     .soc-icon {
         width: 6.73rem;
         height: 6.73rem;
@@ -712,6 +734,18 @@
     .destinations__button-prev,
     .destinations__button-next{
         color: #F2785C;
+    }
+
+    .swiper-button-prev:after{
+        transform: rotate(180deg);
+    }
+    .swiper-button-prev:after, .swiper-button-next:after{
+        font-size: 0;
+        background-image: url(../img/svg/arrow-slider-left.svg);
+        background-size: 3rem 5rem;
+        height: 5rem;
+        width: 3rem;
+
     }
 
 }
