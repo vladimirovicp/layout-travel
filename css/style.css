@@ -13,6 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .logo{
@@ -462,6 +463,10 @@
         padding-top: 8.6rem;
         background-size: 160%;
         background-position: center -2rem;
+    }
+
+    .header .container{
+        z-index: auto;
     }
 
     .header__wrapper::after{
