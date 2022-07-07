@@ -92,6 +92,12 @@ a:hover{
     margin-top: 4rem;
 }
 
+.wrapper-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 @media (min-width: 1440px ){
     html {

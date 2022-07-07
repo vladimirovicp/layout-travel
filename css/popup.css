@@ -8,6 +8,8 @@
     opacity: 0; /*Скрываем фон и сам попап*/
     pointer-events: none; /*Запрещаем ему быть целью событий*/
     transition: 0.5s all;
+    font-size: 1.5rem;
+    color:rgba(13, 96, 111, 1);
 }
 
 .popup__bg.active {
@@ -56,11 +58,13 @@
     font-size: 2rem;
     border-radius: 1rem;
     font-weight: normal;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
 }
 
 .authSoc_facebook{
     color: #fff;
-    background: #1877F2;;
+    background: #1877F2;
+    margin-bottom: 2rem;
 }
 
 .authSoc_google{
@@ -87,3 +91,85 @@
     width: 2.3rem;
     height: 2.3rem;
 }
+
+
+.popup__bg_separator{
+    margin-top: 3.5rem;
+    margin-bottom: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgba(13, 96, 111, 0.5);
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.popup__bg_separator span{
+    position: relative;
+    display: block;
+    min-height: .1rem;
+}
+
+.popup__bg_separator span:before,
+.popup__bg_separator span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: .1rem;
+    background: rgba(13, 96, 111, 0.5);
+}
+
+.popup__bg_separator span:before{
+    right: calc(100% + 1rem);
+    left: -10000%;
+}
+
+.popup__bg_separator span:after{
+    left: calc(100% + 1rem);
+    right: -10000%;
+}
+
+.popup__bg_separator2{
+    height: .1rem;
+    background: rgba(13, 96, 111, 0.5);
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.popup label{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 2rem;
+}
+
+.popup label input{
+    font-size: 2rem;
+    padding: 0 1rem;
+    color: rgba(13, 96, 111, 1);
+    height: 5.4rem;
+    border-radius: 1rem;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.popup .label__text{
+    color: rgba(13, 96, 111, 1);
+    font-size: 1.6rem;
+}
+
+.popup .button{
+    width: 100%;
+    font-weight: normal;
+    text-align: center;
+}
+
+.loginPopUp{
+    margin-bottom: 1rem;
+}
+
+.popup a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
