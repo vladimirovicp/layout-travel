@@ -345,6 +345,11 @@
     font-size: 2rem;
 }
 
+.store__info-link{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .footer{
     background-image: url("../img/jpg/footer.jpg");
     background-repeat: no-repeat;

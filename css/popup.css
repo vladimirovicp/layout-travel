@@ -10,6 +10,8 @@
     transition: 0.5s all;
     font-size: 1.5rem;
     color:rgba(13, 96, 111, 1);
+    z-index: 10;
+    cursor: pointer;
 }
 
 .popup__bg.active {
@@ -40,7 +42,8 @@
     transition: 0.5s all;
 }
 
-.loginPopUp__title{
+.loginPopUp__title,
+.signUpPopUp__title{
     font-size: 3.2rem;
     color: #0D606F;
     font-weight: bold;
