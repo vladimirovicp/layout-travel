@@ -4,6 +4,7 @@ const swiper = new Swiper('.destinations__swiper', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
     },
 
     centeredSlides: true,
@@ -25,10 +26,11 @@ const swiper = new Swiper('.destinations__swiper', {
         '1440': {
             slidesPerView: 1.68,
         },
-    }
+    },
 
    // Свободнфй режим
    //  freeMode: true,
+    slideToClickedSlide: true,
 });
 
 
