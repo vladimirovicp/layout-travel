@@ -1,0 +1,178 @@
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0; /*Скрываем фон и сам попап*/
+    pointer-events: none; /*Запрещаем ему быть целью событий*/
+    transition: 0.5s all;
+    font-size: 1.5rem;
+    color:rgba(13, 96, 111, 1);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.popup__bg.active {
+    /*При добавлении класса 'active'*/
+    opacity: 1; /*Показываем фон и попап*/
+    pointer-events: all; /*Возвращаем события*/
+    transition: 0.5s all;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    /*Центрируем и масштабируем в 0 само окно*/
+    width: 65rem;
+    padding: 4.5rem;
+    transition: 0.5s all;
+
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 0.8rem 0.8rem rgba(0, 0, 0, 0.25);
+}
+
+.popup.active {
+    /*При добавлении класса 'active'*/
+    transform: translate(-50%, -50%) scale(1);
+    /*Так же центрируем и плавно увеличиваем*/
+    transition: 0.5s all;
+}
+
+.loginPopUp__title,
+.signUpPopUp__title{
+    font-size: 3.2rem;
+    color: #0D606F;
+    font-weight: bold;
+    text-align: center;
+}
+
+.authSoc{
+    padding-top: 3rem;
+}
+
+.authSoc_facebook,
+.authSoc_google{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    font-weight: normal;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.authSoc_facebook{
+    color: #fff;
+    background: #1877F2;
+    margin-bottom: 2rem;
+}
+
+.authSoc_google{
+    color: #0D606F;
+    background: #fff;
+}
+
+.authSoc_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.authSoc_wrapper img{
+    margin-right: 1.5rem;
+}
+
+
+.authSoc_facebook img{
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+.authSoc_google img{
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+
+.popup__bg_separator{
+    margin-top: 3.5rem;
+    margin-bottom: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgba(13, 96, 111, 0.5);
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.popup__bg_separator span{
+    position: relative;
+    display: block;
+    min-height: .1rem;
+}
+
+.popup__bg_separator span:before,
+.popup__bg_separator span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: .1rem;
+    background: rgba(13, 96, 111, 0.5);
+}
+
+.popup__bg_separator span:before{
+    right: calc(100% + 1rem);
+    left: -10000%;
+}
+
+.popup__bg_separator span:after{
+    left: calc(100% + 1rem);
+    right: -10000%;
+}
+
+.popup__bg_separator2{
+    height: .1rem;
+    background: rgba(13, 96, 111, 0.5);
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.popup label{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 2rem;
+}
+
+.popup label input{
+    font-size: 2rem;
+    padding: 0 1rem;
+    color: rgba(13, 96, 111, 1);
+    height: 5.4rem;
+    border-radius: 1rem;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.popup .label__text{
+    color: rgba(13, 96, 111, 1);
+    font-size: 1.6rem;
+}
+
+.popup .button{
+    width: 100%;
+    font-weight: normal;
+    text-align: center;
+}
+
+.loginPopUp{
+    margin-bottom: 1rem;
+}
+
+.popup a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
