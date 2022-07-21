@@ -4,6 +4,7 @@ const swiper = new Swiper('.destinations__swiper', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
     },
 
     centeredSlides: true,
@@ -25,10 +26,11 @@ const swiper = new Swiper('.destinations__swiper', {
         '1440': {
             slidesPerView: 1.68,
         },
-    }
+    },
 
    // Свободнфй режим
    //  freeMode: true,
+    slideToClickedSlide: true,
 });
 
 
@@ -80,24 +82,65 @@ if (menuLinks.length > 0){
 
 }
 
+//Popup
+
+let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
+let loginPopUp = document.querySelector('.loginPopUp'); // Само окно loginPopUp
+let openPopupButtonslogin = document.querySelectorAll('.open-popup-login'); // Кнопки для показа окна
+
+let signUpPopUp = document.querySelector('.signUpPopUp');
+let openPopupButtonsSignUp = document.querySelectorAll('.open-popup-signUp'); // Кнопки для показа окна
+
+
+openPopupButtonslogin.forEach((button) =>{
+    button.addEventListener('click', (e) => {
+        e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+        signUpPopUp.classList.remove('active');
+        popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+        loginPopUp.classList.add('active'); // И для самого окна
+        document.body.classList.add('_lock');
+    })
+})
+
+openPopupButtonsSignUp.forEach((button) =>{
+    button.addEventListener('click', (e) => {
+        e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+        popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+        signUpPopUp.classList.add('active'); // И для самого окна
+        loginPopUp.classList.remove('active');
+        document.body.classList.add('_lock');
+    })
+})
+
+document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+    if(e.target === popupBg) { // Если цель клика - фот, то:
+        popupBg.classList.remove('active'); // Убираем активный класс с фона
+        loginPopUp.classList.remove('active');
+        signUpPopUp.classList.remove('active');
+        document.body.classList.remove('_lock');
+    }
+});
 
 
 
+let loginPopUpSignIn = document.querySelectorAll('.loginPopUp__signIn');
+loginPopUpSignIn.forEach((button) =>{
+    button.addEventListener('click', (e) => {
+        let loginPopUpEmail = loginPopUp.querySelector('.loginPopUp__email');
+        let loginPopUpPassword = loginPopUp.querySelector('.loginPopUp__password');
+        alert(`Вы ввели: \n Почта: `  + loginPopUpEmail.value  + `\n Пароль: ` + loginPopUpPassword.value);
+    })
+});
+
+let signUpPopUpSignIn = document.querySelectorAll('.signUpPopUp__signIn');
+signUpPopUpSignIn.forEach((button) =>{
+    button.addEventListener('click', (e) => {
+        let createPopUpEmail = signUpPopUp.querySelector('.signUpPopUp__email');
+        let createPopUpPassword = signUpPopUp.querySelector('.signUpPopUp__password');
+        alert(`Вы ввели: \n Почта: `  + createPopUpEmail.value  + `\n Пароль: ` + createPopUpPassword.value);
+    })
+});
 
 
-// let body = document.querySelector('body');
-//
-// body.addEventListener('click', function (e) {
-//
-//     console.log('111');
-//
-//
-//     if (e.offsetX < 0) {
-//         console.log('before');
-//     }
-//     if (e.offsetX > 200) {
-//         console.log('after');
-//     }
-// })
 
 
